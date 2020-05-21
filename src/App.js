@@ -36,7 +36,7 @@ export class App extends Component {
 								<p className='text-xl leading-tight text-dark'>{title}</p>
 								<p className='text-md leading-tight text-gray-800'>{subTitle}</p>
 								<p className='text-sm text-gray-500'>{location}</p>
-								<p className='text-sm text-left text-gray-500 leading-tight my-3'>
+								<p className='text-sm text-left text-gray-500 leading-normal my-3'>
 									{about}
 								</p>
 								<div className='flex'>
