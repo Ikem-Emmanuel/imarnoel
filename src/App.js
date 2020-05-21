@@ -26,7 +26,7 @@ export class App extends Component {
 		const { title, subTitle, location, about, cvPage, projectPage, linkedinpage } = this.state;
 		return (
 			<div className='container mx-auto p-6'>
-				<div className='lg:w-3/4 lg:mx-auto mt-32 bg-white shadow-lg rounded-lg overflow-hidden'>
+				<div className='lg:w-3/4 lg:mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden'>
 					<div className='sm:items-center md:flex md:shrink-0 px-2 py-3 m-3'>
 						<div className='flex-shrink-0'>
 							<img className='h-48 w-48 rounded-full' src={emma} alt='' />
@@ -36,29 +36,29 @@ export class App extends Component {
 								<p className='text-xl leading-tight text-dark'>{title}</p>
 								<p className='text-md leading-tight text-gray-800'>{subTitle}</p>
 								<p className='text-sm text-gray-500'>{location}</p>
-								<p className='text-sm text-justify text-gray-500 leading-tight my-3'>
+								<p className='text-sm text-left text-gray-500 leading-tight my-3'>
 									{about}
 								</p>
 								<div className='flex'>
 									<a
 										href={cvPage}
-										target='_blanl'
-										className='text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
-										Download CV
+										target='_blank'
+										className='sm:flex-shrink-0 text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
+										Resume
 									</a>
 
 									<a
 										href={linkedinpage}
-										target='_blanl'
-										className='text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
-										Linkedin Profile
+										target='_blank'
+										className='sm:flex-shrink-0 text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
+										Linkedin
 									</a>
 
 									<a
 										href={projectPage}
-										target='_blanl'
-										className='text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
-										View Projects
+										target='_blank'
+										className='sm:flex-shrink-0 text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
+										Projects
 									</a>
 								</div>
 							</div>
