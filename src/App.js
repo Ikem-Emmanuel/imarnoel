@@ -25,8 +25,12 @@ export class App extends Component {
 	render() {
 		const { title, subTitle, location, about, cvPage, projectPage, linkedinpage } = this.state;
 		return (
-			<div className='container mx-auto p-6'>
-				<div className='lg:w-3/4 lg:mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden'>
+
+			<div class="min-w-screen min-h-screen bg-gray-200 flex items-center justify-center px-5 py-5">
+				<div class="rounded-lg shadow-xl bg-gray-900 text-white w-1/2">
+					<div class="border-b border-gray-700 px-8 py-3">
+						<div class="inline-block w-3 h-3 mr-2 rounded-full bg-red-700"></div><div class="inline-block w-3 h-3 mr-2 rounded-full bg-yellow-500"></div><div class="inline-block w-3 h-3 mr-2 rounded-full bg-green-600"></div>
+					</div>
 					<div className='sm:items-center md:flex md:shrink-0 px-2 py-3 m-3'>
 						<div className='flex-shrink-0'>
 							<img className='h-48 w-48 rounded-full' src={emma} alt='' />
@@ -34,7 +38,7 @@ export class App extends Component {
 						<div className='my-3'>
 							<div className='ml-3 pt-1 px-3'>
 								<p className='text-xl leading-tight text-dark'>{title}</p>
-								<p className='text-md leading-tight text-gray-800'>{subTitle}</p>
+								<p className='text-md leading-tight text-gray-700'>{subTitle}</p>
 								<p className='text-sm text-gray-500'>{location}</p>
 								<p className='text-sm text-left text-gray-500 leading-normal my-3'>
 									{about}
@@ -66,6 +70,49 @@ export class App extends Component {
 					</div>
 				</div>
 			</div>
+
+
+			// <div className='container mx-auto p-6'>
+			// 	<div className='lg:w-3/4 lg:mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden'>
+					// <div className='sm:items-center md:flex md:shrink-0 px-2 py-3 m-3'>
+					// 	<div className='flex-shrink-0'>
+					// 		<img className='h-48 w-48 rounded-full' src={emma} alt='' />
+					// 	</div>
+					// 	<div className='my-3'>
+					// 		<div className='ml-3 pt-1 px-3'>
+					// 			<p className='text-xl leading-tight text-dark'>{title}</p>
+					// 			<p className='text-md leading-tight text-gray-800'>{subTitle}</p>
+					// 			<p className='text-sm text-gray-500'>{location}</p>
+					// 			<p className='text-sm text-left text-gray-500 leading-normal my-3'>
+					// 				{about}
+					// 			</p>
+					// 			<div className='flex'>
+					// 				<a
+					// 					href={cvPage}
+					// 					target='_blank'
+					// 					className='sm:flex-shrink-0 text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
+					// 					Resume
+					// 				</a>
+
+					// 				<a
+					// 					href={linkedinpage}
+					// 					target='_blank'
+					// 					className='sm:flex-shrink-0 text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
+					// 					Linkedin
+					// 				</a>
+
+					// 				<a
+					// 					href={projectPage}
+					// 					target='_blank'
+					// 					className='sm:flex-shrink-0 text-green-500 hover:text-green-100 hover:bg-green-400 border border-green-500 text-xs font-semibold rounded px-4 py-2 mr-6 leading-normal'>
+					// 					Projects
+					// 				</a>
+					// 			</div>
+					// 		</div>
+					// 	</div>
+					// </div>
+			// 	</div>
+			// </div>
 		);
 	}
 }
